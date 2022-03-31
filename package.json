@@ -1,0 +1,20 @@
+{
+  "name": "test-task-radency-1",
+  "version": "1.0.0",
+  "description": "Test task of dynamic keys",
+  "main": "index.js",
+  "scripts": {
+    "start": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eduard-Konovka/test-task-radency-1.git"
+  },
+  "author": "Eduard Konovka <ed098ua@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eduard-Konovka/test-task-radency-1/issues"
+  },
+  "homepage": "https://github.com/Eduard-Konovka/test-task-radency-1#readme",
+  "dependencies": {}
+}
