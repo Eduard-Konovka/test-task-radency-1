@@ -17,10 +17,11 @@ const chooseOptimalDistance = (t, k, ls) => {
     amounts.push(...acc);
   }
 
-  const result = amounts.filter((el) => el < t);
+  const result = amounts.filter((el) => el <= t);
 
   return result[result.length - 1];
 };
 
 console.log(chooseOptimalDistance(174, 3, [51, 56, 58, 59, 61]));
+console.log(chooseOptimalDistance(163, 3, [50, 55, 56, 57, 58]));
 console.log(chooseOptimalDistance(163, 3, [50]));
