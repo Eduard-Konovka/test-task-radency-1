@@ -38,3 +38,5 @@ chooseOptimalDistance(174, 3, [51, 56, 58, 59, 61]); // 173
 chooseOptimalDistance(163, 3, [50, 55, 56, 57, 58]); // 163
 chooseOptimalDistance(163, 3, [50]); // null
 ```
+
+### Рішення [Kraska](https://github.com/Kraska/radency-test/blob/main/src/ChooseBestDistance.js)
