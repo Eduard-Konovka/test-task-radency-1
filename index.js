@@ -20,6 +20,7 @@ const chooseOptimalDistance = (t, k, ls) => {
 
 console.log(chooseOptimalDistance(174, 3, [51, 56, 58, 59, 61]));
 console.log(chooseOptimalDistance(163, 3, [50]));
+console.log(chooseOptimalDistance(163, 3, [50, 55, 56]));
 console.log(chooseOptimalDistance(163, 3, [50, 55, 56, 57, 58]));
 console.log(chooseOptimalDistance(230, 3, [91, 74, 73, 85, 73, 81, 87]));
 
@@ -35,7 +36,7 @@ const chooseOptimalDistance2 = (t, k, ls) => {
   for (let i = 0; i < k; i++) {
     amounts.map((el) => {
       for (let j = i + 1; j < ls.length; j++) {
-        amounts.push(el + ls[j * j]);
+        amounts.push(el + ls[j]);
       }
     });
   }
@@ -47,9 +48,11 @@ const chooseOptimalDistance2 = (t, k, ls) => {
 
 console.log(chooseOptimalDistance2(174, 3, [51, 56, 58, 59, 61]));
 console.log(chooseOptimalDistance2(163, 3, [50]));
+console.log(chooseOptimalDistance2(163, 3, [50, 55, 56]));
 console.log(chooseOptimalDistance2(163, 3, [50, 55, 56, 57, 58]));
 console.log(chooseOptimalDistance2(230, 3, [91, 74, 73, 85, 73, 81, 87]));
 console.log(chooseOptimalDistance2(350, 4, [91, 74, 73, 85, 73, 81, 87]));
+console.log(chooseOptimalDistance2(36, 5, [1, 2, 3, 4, 5, 6, 7, 8, 9]));
 
 console.log("\n");
 
@@ -125,6 +128,8 @@ const chooseBestDistance = (t, k, ls) => {
 
 console.log(chooseBestDistance(174, 3, [51, 56, 58, 59, 61]));
 console.log(chooseBestDistance(163, 3, [50]));
+console.log(chooseBestDistance(163, 3, [50, 55, 56]));
 console.log(chooseBestDistance(163, 3, [50, 55, 56, 57, 58]));
 console.log(chooseBestDistance(230, 3, [91, 74, 73, 85, 73, 81, 87]));
 console.log(chooseBestDistance(350, 4, [91, 74, 73, 85, 73, 81, 87]));
+console.log(chooseBestDistance(36, 5, [1, 2, 3, 4, 5, 6, 7, 8, 9]));
